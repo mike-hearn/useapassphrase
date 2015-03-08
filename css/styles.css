@@ -1,0 +1,55 @@
+* {
+  font-family: 'MH';
+  line-height: 140%;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font: 100 72px 'MH';
+  margin: 10px auto 10px auto;
+}
+h1 span {
+  font-weight: 400;
+}
+input {
+  display: block;
+  margin: 0 auto;
+  font-size: 40px;
+  height: 60px;
+  width: 90%;
+  text-align: center;
+  padding: 1%;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+}
+table {
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-size: 90%;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+.container {
+  width: 95%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+}
+.passphrase-options {
+  margin-top: 1%;
+  text-align: center;
+}
+code, .password {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
