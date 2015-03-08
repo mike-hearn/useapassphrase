@@ -12,10 +12,10 @@ This site needs a lot of work. Please contribute to any of the following:
 * To the wordlist from which the passwords are generated, which is contained in `js/wordlist.js`
 * Add additional password possibilities (e.g. four-word-with-space).
 
-# How to Run It Locally, Should You Choose To
+# Running It Locally
 
 It requires grunt-cli (`npm install -g grunt-cli`), after which you can just
-run `npm install`.
+run `npm install` and then `grunt`.
 
 If you have Docker & Docker Compose installed, you should theoretically just be
 able to run `docker-compose up` to build the /dist directory, which will create
