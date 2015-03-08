@@ -2,7 +2,7 @@
 
 Because humans are terrible at creating secure passwords. The [famous xkcd comic][1] got it right: humans have been trained to use <b>hard-to-remember</b> passwords that are <b>trivial</b> for computers to guess.
 
-Why are human created passwords so darn guessable? Because we tend to follow predictable patterns. We tend to create passwords that fall into common patterns: passwords based on names, locations, dates or just common English words. Then, we add some spice with a capital letter, some numbers, or a symbol.
+Why are human created passwords so darn guessable? Because we tend to follow predictable patterns. We create passwords based on things we can remember, such as names, locations, dates or just common English words. Then, we add some spice with a capital letter, some numbers, or a symbol.
 
 Does your password fall into this group?
 
