@@ -1,10 +1,10 @@
 ## Why should I use a random passphrase?
 
-Because humans are terrible at creating secure passwords. The [famous xkcd comic][1] got it right: humans have been trained to use <b>hard-to-remember</b> passwords that are <b>trivial</b> for computers to guess.
+Because humans are terrible at creating secure passwords. The [famous xkcd comic][1] got it right: humans have been trained to use <b>hard-to-remember</b> passwords that are <b>easy</b> for computers to guess.
 
 [1]: http://xkcd.com/936/
 
-Try as we might, humans usually end up falling to predictable patterns when creating passwords. We create them based on things we can remember, such as names, locations, dates or just common English words. Then, we add some spice with a capital letter, some numbers, or a symbol.
+Try as we might, humans usually end up using one of a few predictable patterns when creating passwords. We base them on things we can remember, such as names, locations, dates or just common English words. Then, we add some spice with a capital letter, some numbers, or a symbol.
 
 Does your password fall into this group?
 
@@ -16,7 +16,7 @@ Does your password fall into this group?
 | An important number, such as a date or zip code (example: `03261981`)| It's memorable to you, certainly. | 2.213 seconds |
 | A word with trivial letter→number substitutions (example: `S4nfr4n`)| Sort of memorable, but you may forget which letters are substituted for numbers.| 639 milliseconds|
 
-If your password resembles any of these examples, it is _instantly crackable._ Even a mix of these patterns, such as `[common word]+[number]` will be trivial to crack.
+If your password resembles any of these examples, it is _instantly crackable._ Even a mix of these patterns, such as `[common word]+[number]` will be straightforward to crack.
 
 Compare those to a passphrase:
 
@@ -27,7 +27,7 @@ Compare those to a passphrase:
 
 ## Is it really that easy to crack a password? How is it done, exactly?
 
-The method for cracking is usually some variation on this method:
+The method for cracking usually looks something like this:
 
 1. First, the hackers start with a bunch of wordlists. The [top 10,000 passwords][pwd] is a good place to start. Also, lists of all English words, all names, dates, and so on. In less than one second, [30% of all passwords will be cracked](https://xato.net/passwords/more-top-worst-passwords/).
 2. After exhausting those wordlists, they will try all of the words again with common substitutions: capitalizing the first letter (`december` → `December`), making common letter-for-number swaps (`december` → `d3cemb3r`), and other common password variations.
@@ -74,7 +74,7 @@ Firefox, Chrome, Safari and Internet Explorer all have built in password manager
 
 ### 2. Use a strong <u>master password</u> for your password manager.
 
-This is the perfect opportunity for a passphrase.
+This is when a passphrase would be especially useful.
 
 ### 3. Use a different passphrase for every site.
 
