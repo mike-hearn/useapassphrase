@@ -80,6 +80,10 @@ table, th, td {
 tr:nth-child(even) {
     background-color: #f6f6f6;
 }
+li {
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
 .container {
   width: 95%;
   max-width: 768px;
