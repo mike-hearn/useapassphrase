@@ -58,7 +58,7 @@ Which would you rather remember?
 
 ## Fine, you've convinced me. I'll use a passphrase. What else can I do to increase my security?
 
-The receipe for perfect password management is straightforward.
+The recipe for perfect password management is straightforward.
 
 ### 1. Use a password manager.
 
