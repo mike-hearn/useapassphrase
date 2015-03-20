@@ -146,11 +146,13 @@ code, .password {
   font-weight: 700;
 }
 .footer {
+  background-color: #eee;
+  border-top: 1px solid #aaa;
+  font-size: 80%;
+  margin-top: 40px;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 80%;
-  border-top: 1px solid #aaa;
-  background-color: #eee;
+  padding-top: 30px;
 }
 .footer p {
   margin: 0;
