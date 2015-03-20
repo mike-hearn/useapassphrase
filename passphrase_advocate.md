@@ -32,9 +32,9 @@ The method for cracking is usually some variation on this method:
 1. First, the hackers start with a bunch of wordlists. The [top 10,000 passwords][pwd] is a good place to start. Also, lists of all English words, all names, dates, and so on. In less than one second, [30% of all passwords would be cracked](https://xato.net/passwords/more-top-worst-passwords/).
 2. After exhausting those wordlists, they will try all of the words again with common substitutions: capitalizing the first letter (`december` → `December`), making common letter-for-number swaps (`december` → `d3cemb3r`), and other common password variations.
 3. Next, they start combining the previous wordlists. Name + date (`doug3251983`). Name + [separator] + date (`doug.3251983`).
-4. Brute force, a.k.a. try every combination of characters. Try `a`, then `b`, then `c` ... eventually `aa`, `ab`, `ac`.
+4. If all else fails: brute force, a.k.a. try every combination of characters. Try `a`, then `b`, then `c` ... eventually `aa`, `ab`, `ac` ... eventually `6j2b#hi8`, `6j2b#hi9`, `6j2b#hi0`, et cetera.
 
-If your password is based on any kind of pattern, eventually using some combination of the above steps, it will be cracked.
+If your password is based on any kind of pattern, eventually using some combination of the above steps, it will be cracked. Depending on how well-protected a website keeps your password, modern computers can make somewhere between 10,000 and [350 billion guesses](http://arstechnica.com/security/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/) per second.
 
 Your best defense is using a truly random generator (like this site).
 
