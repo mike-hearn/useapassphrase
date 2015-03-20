@@ -30,7 +30,7 @@ Compare those to a passphrase:
 The method for cracking is usually some variation on this method:
 
 1. First, the hackers start with a bunch of wordlists. The [top 10,000 passwords][pwd] is a good place to start. Also, lists of all English words, all names, dates, and so on. In less than one second, [30% of all passwords would be cracked](https://xato.net/passwords/more-top-worst-passwords/).
-2. After exhausting those wordlists, they will try all of the words again with common substitutions: capitalizing the first letter (`december` → `December`), making common letter-for-number swaps (`d3cemb3r`), and other common password variations.
+2. After exhausting those wordlists, they will try all of the words again with common substitutions: capitalizing the first letter (`december` → `December`), making common letter-for-number swaps (`december` → `d3cemb3r`), and other common password variations.
 3. Next, they start combining the previous wordlists. Name + date (`doug3251983`). Name + [separator] + date (`doug.3251983`).
 4. Brute force, a.k.a. try every combination of characters. Try `a`, then `b`, then `c` ... eventually `aa`, `ab`, `ac`.
 
