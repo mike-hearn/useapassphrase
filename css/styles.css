@@ -1,12 +1,16 @@
 * {
   font-family: 'MH';
-  line-height: 140%;
+  line-height: 160%;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 h1 {
   text-transform: uppercase;
   text-align: center;
   font: 100 72px 'MH';
-  margin: 10px auto 10px auto;
+  margin: 0 auto 20px auto;
 }
 h1 span {
   font-weight: 400;
@@ -20,14 +24,52 @@ input {
   text-align: center;
   padding: 1%;
 }
-svg {
-  display: block;
-  margin: 0 auto;
+select {
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+select {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA1AQMAAACN/txFAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURQAAAAEBAcq50i8AAAACdFJOU/0BoIZiXgAAAMJJREFUKM9VzTERwzAMhWHlMmRMGYRCGYRSGcQMCqFUAsUQNHrw2XX0JMvWIn2n4SeaJgz3i+5Bb4qDPsSDmJJjYcqulam4Nqbq2ps8eDR58Gzy4NXEkzzYHrUHl0c9uD7qwU1kwX3SIbL8KbL8JbJ8FSXLibLlRMVyomo5KGgOujUHRc1BPClpHMoah4rGoapxVUBcdSM+6OyKyKkYOVVCTpWRUxXkVBU5U5Cc6ZacKUrONK80KS+jyjqqbpO+k37QH/1MXwF6V9G6AAAAAElFTkSuQmCC) no-repeat 97% white;
+  background-size: 10px 5px;
+  padding: 0 25px;
+}
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+@media screen and (min-width:0\0) {
+  select {
+    background:none;
+    padding: 5px;
+  }
+}
+button {
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 3px 20px;
+  background-color: white;
+  height: 34px;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #5dfa7b;
+  color: white;
+}
+button:active {
+  background-color: #48c260;
+}
+p {
+  margin: 20px 0;
 }
 table {
   width: 95%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 40px auto 40px auto;
   font-size: 90%;
 }
 table, th, td {
@@ -45,11 +87,69 @@ tr:nth-child(even) {
 }
 .header {
   text-align: center;
+  margin-top: 10px;
+}
+.passphrase-label {
+  margin: 0 auto 3px auto;
+  font-size: 75%;
+  color: #888;
+  text-align: center;
 }
 .passphrase-options {
   margin-top: 1%;
   text-align: center;
 }
+.crack-time-label {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 72%;
+}
+.crack-time-label .crack-time {
+  font-weight: 400;
+}
+.social-buttons {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 50px 0;
+}
+.social-buttons svg {
+  vertical-align: middle;
+}
+.social-buttons a {
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+  font-size: 85%;
+}
+.social-buttons .sc--facebook {
+  color: #3b5998;
+  fill: #3b5998;
+}
+.social-buttons .sc--twitter {
+  color: #55acee;
+  fill: #55acee;
+}
+.social-buttons .sc--github {
+  color: black;
+  fill: black;
+}
 code, .password {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
+}
+.footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 80%;
+  border-top: 1px solid #aaa;
+  background-color: #eee;
+}
+.footer p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
