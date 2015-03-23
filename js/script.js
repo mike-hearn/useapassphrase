@@ -4,7 +4,8 @@ function generatePassword(numberOfWords) {
   // Cryptographically generated random numbers
   numberOfWords = parseInt(numberOfWords);
   var array = new Uint32Array(numberOfWords);
-  window.crypto.getRandomValues(array);
+  var crypto = window.crypto || window.msCrypto;
+  crypto.getRandomValues(array);
 
   // Empty array to be filled with wordlist
   var generatedPasswordArray = [];
