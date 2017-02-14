@@ -1,6 +1,10 @@
 'use strict';
 
-function generatePassword(numberOfWords) {
+function generatePassword(numberOfWords, spaces) {
+
+  if (spaces === undefined) {
+    spaces = true;
+  }
   // Cryptographically generated random numbers
   numberOfWords = parseInt(numberOfWords);
   var array = new Uint32Array(numberOfWords);
@@ -13,11 +17,11 @@ function generatePassword(numberOfWords) {
 
   // Grab a random word, push it to the password array
   for (var i = 0; i < array.length; i++) {
-      var index = (array[i] % 5852);
-      generatedPasswordArray.push(wordlist[index]);
+    var index = (array[i] % 5852);
+    generatedPasswordArray.push(wordlist[index]);
   }
 
-  return generatedPasswordArray.join(' ');
+  return generatedPasswordArray.join(spaces === true ? ' ' : '');
 }
 
 function setStyleFromWordNumber(passwordField, numberOfWords) {
@@ -67,6 +71,7 @@ function calculateAndSetCrackTime() {
 var selectField = document.getElementById('passphrase_select');
 var passwordField = document.getElementById('passphrase');
 var button = document.querySelector('.btn-generate');
+var spacesField = document.getElementById('spaces');
 
 // Initially run it upon load
 passwordField.setAttribute('value', generatePassword(4));
@@ -75,7 +80,9 @@ calculateAndSetCrackTime();
 // Listen for a button click
 button.addEventListener('click', function() {
   var numberOfWords = selectField.options[selectField.selectedIndex].value;
-  passwordField.value = generatePassword(numberOfWords);
+  var spaces = spacesField.checked;
+
+  passwordField.value = generatePassword(numberOfWords, spaces);
   setStyleFromWordNumber(passwordField, numberOfWords);
   calculateAndSetCrackTime();
 });
