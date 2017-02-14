@@ -24,6 +24,14 @@ input {
   text-align: center;
   padding: 1%;
 }
+
+input[type="radio"]
+{
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+
 select {
   font-size: 16px;
   -webkit-appearance: none;
