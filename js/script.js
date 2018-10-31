@@ -10,10 +10,10 @@ function generatePassword(numberOfWords) {
   // Empty array to be filled with wordlist
   var generatedPasswordArray = [];
 
-
+  var alphabet_size = wordlist.length;
   // Grab a random word, push it to the password array
   for (var i = 0; i < array.length; i++) {
-      var index = (array[i] % 5852);
+      var index = (array[i] % alphabet_size);
       generatedPasswordArray.push(wordlist[index]);
   }
 
