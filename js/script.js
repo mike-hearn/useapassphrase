@@ -19,7 +19,7 @@ function generatePassword(numberOfWords) {
       generatedPasswordArray.push(wordlist[index]);
   }
 
-  return generatedPasswordArray.join(' ');
+  return generatedPasswordArray;
 }
 
 function setStyleFromWordNumber(passwordField, numberOfWords) {
@@ -68,21 +68,30 @@ function calculateAndSetCrackTime() {
 
 var selectField = document.getElementById('passphrase_select');
 var passwordField = document.getElementById('passphrase');
+var separatorField = document.getElementById('separator');
 var button = document.querySelector('.btn-generate');
 
 // Initially run it upon load
-passwordField.setAttribute('value', generatePassword(4));
+var passArray = generatePassword(4); // Save array to easily change separator
+passwordField.setAttribute('value', passArray.join(' '));
 calculateAndSetCrackTime();
 
 // Listen for a button click
 button.addEventListener('click', function() {
   var numberOfWords = selectField.options[selectField.selectedIndex].value;
-  passwordField.value = generatePassword(numberOfWords);
+  passArray = generatePassword(numberOfWords);
+  passwordField.value = passArray.join(separatorField.value);
   setStyleFromWordNumber(passwordField, numberOfWords);
   calculateAndSetCrackTime();
 });
 
 // Listen for password value change
 passwordField.addEventListener('input', function (evt) {
+  calculateAndSetCrackTime();
+});
+
+// Listen for separator value change
+separatorField.addEventListener('input', function (evt) {
+  passwordField.value = passArray.join(separatorField.value);
   calculateAndSetCrackTime();
 });
