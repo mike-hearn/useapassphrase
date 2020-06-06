@@ -19,10 +19,12 @@
   <p class="crack-time-label">Approximate Crack Time: <span class="crack-time">0 seconds</span></p>
   <div class="passphrase-options">
     <select id="passphrase_select">
-      <option value="4" selected>Four-word passphrase, with spaces</option>
-      <option value="5">Five-word passphrase, with spaces</option>
-      <option value="12">Twelve-word passphrase, with spaces</option>
+      <option value="4" selected>Four-word passphrase</option>
+      <option value="5">Five-word passphrase</option>
+      <option value="12">Twelve-word passphrase</option>
     </select>
+    <p class="passphrase-separator"> with separator: </p>
+    <input class="separator" id="separator" type="text" value=" " onmouseover="this.select()"/>
     <button class="btn-generate">Generate New Passphrase</button>
   </div>
   <div class="social-buttons">
