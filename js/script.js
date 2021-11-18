@@ -12,10 +12,11 @@ function generatePassword(numberOfWords) {
   // Empty array to be filled with wordlist
   var generatedPasswordArray = [];
 
+
   // Grab a random word, push it to the password array
   for (var i = 0; i < numberOfWords; i++) {
-    var index = Math.floor(randomNumberBetweenZeroAndOne() * wordlist.length);
-    generatedPasswordArray.push(wordlist[index]);
+      var index = Math.floor(randomNumberBetweenZeroAndOne() * wordlist.length)
+      generatedPasswordArray.push(wordlist[index]);
   }
 
   return generatedPasswordArray.join(' ');
@@ -23,7 +24,7 @@ function generatePassword(numberOfWords) {
 
 function setStyleFromWordNumber(passwordField, numberOfWords) {
   var baseSize = '40';
-  var newSize = baseSize * (4 / numberOfWords);
+  var newSize = baseSize * (4/numberOfWords);
   passwordField.setAttribute('style', 'font-size: ' + newSize + 'px;');
 }
 
@@ -33,12 +34,12 @@ function convertSecondsToReadable(seconds) {
 
   // Enumerate all the numbers
   var numMilliseconds = seconds * 1000;
-  var numSeconds = Math.floor(seconds);
-  var numMinutes = Math.floor(numSeconds / 60);
-  var numHours = Math.floor(numSeconds / (60 * 60));
-  var numDays = Math.floor(numSeconds / (60 * 60 * 24));
-  var numYears = Math.floor(numSeconds / (60 * 60 * 24 * 365));
-  var numCenturies = Math.floor(numSeconds / (60 * 60 * 24 * 365 * 100));
+  var numSeconds     = Math.floor(seconds);
+  var numMinutes     = Math.floor(numSeconds / 60);
+  var numHours       = Math.floor(numSeconds / (60 * 60));
+  var numDays        = Math.floor(numSeconds / (60 * 60 * 24));
+  var numYears       = Math.floor(numSeconds / (60 * 60 * 24 * 365));
+  var numCenturies   = Math.floor(numSeconds / (60 * 60 * 24 * 365 * 100));
 
   if (numMilliseconds < 1000) {
     timeString = numMilliseconds + ' milliseconds';
@@ -74,7 +75,7 @@ passwordField.setAttribute('value', generatePassword(4));
 calculateAndSetCrackTime();
 
 // Listen for a button click
-button.addEventListener('click', function () {
+button.addEventListener('click', function() {
   var numberOfWords = selectField.options[selectField.selectedIndex].value;
   passwordField.value = generatePassword(numberOfWords);
   setStyleFromWordNumber(passwordField, numberOfWords);
