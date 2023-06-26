@@ -42,8 +42,26 @@
     <p>I assume no responsibility if you use a password from this site and subsequently are hacked.</div>
 </div>
 </div>
+
+<script>
+let language = 'en';
+const languages = ['en', 'it'];
+const userLanguages = navigator.languages || [navigator.language || navigator.userLanguage];
+
+for (let i = 0; i < userLanguages.length; i++) {
+  const lang = userLanguages[i].split('-')[0];
+  if (languages.indexOf(lang) !== -1) {
+    language = lang;
+    break;
+  }
+}
+
+// append the language wordlist to the script
+const script = document.createElement('script');
+script.src = `js/wordlist/${language}.js?__inline=true`;
+document.body.appendChild(script);
+</script>
 <script src="js/zxcvbn.js?__inline=true"></script>
-<script src="js/wordlist.js?__inline=true"></script>
 <script src="js/script.js?__inline=true"></script>
 </body>
 </html>
