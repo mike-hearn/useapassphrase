@@ -20,7 +20,7 @@ input {
   margin: 0 auto;
   font-size: 40px;
   height: 60px;
-  width: 90%;
+  width: 100%;
   text-align: center;
   padding: 1%;
 }
@@ -86,7 +86,7 @@ li {
 }
 .container {
   width: 95%;
-  max-width: 768px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .header {

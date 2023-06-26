@@ -15,7 +15,7 @@ function generatePassword(numberOfWords) {
 
   // Grab a random word, push it to the password array
   for (var i = 0; i < numberOfWords; i++) {
-      var index = Math.floor(randomNumberBetweenZeroAndOne() * 7776)
+      var index = Math.floor(randomNumberBetweenZeroAndOne() * wordlist.length)
       generatedPasswordArray.push(wordlist[index]);
   }
 
