@@ -6,10 +6,10 @@
   "dependencies": {
     "grunt": "^1.5.3",
     "grunt-inline": "^0.3.4",
-    "assemble": "^0.21.0"
+    "assemble": "^0.24.0"
   },
   "devDependencies": {
-    "assemble": "^0.21.0",
+    "assemble": "^0.24.0",
     "grunt": "^1.5.3",
     "grunt-cli": "^0.1.13",
     "grunt-inline": "^0.3.4"
