@@ -1,4 +1,4 @@
-FROM node
+FROM node:21.6-bookworm-slim
 
 ADD . /code
 WORKDIR /code
